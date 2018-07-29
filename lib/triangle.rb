@@ -21,7 +21,7 @@ attr_accessor:s1,:s2,:s3, :kind
      
      
     elsif @s1 == @s2 || @s2 == @s3 || @s1 == @s3
-     self.kind = :isoscoeles 
+     self.kind = :isosceles 
      
    else
      self.kind = :scalene
