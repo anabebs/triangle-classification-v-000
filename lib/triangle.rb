@@ -10,7 +10,7 @@ attr_accessor:s1,:s2,:s3, :kind
   
   def kind 
     
-    if (@s1 * @s2 * @s3) == 0 || (@s1+ @s2) <= @s3 || (@s2 +@s3) <= @s1 || (@s3+@s1) <= @s2 
+    if (@s1 * @s2 * @s3) == 0 || (@s1+ @s2) <= @s3 || (@s2 +@s3) <= @s1 || (@s3 + @s1) <= @s2 
       begin
         raise TriangleError
         puts error.message
@@ -20,7 +20,7 @@ attr_accessor:s1,:s2,:s3, :kind
      self.kind = :equilateral 
      
      
-    elsif @s1 == @s2 || @s2 == @s3 || @s1 == @s3
+    elsif @s1 == @s2 || @s1 == @s3 || @s2 == @s3
      self.kind = :isosceles 
      
    else
